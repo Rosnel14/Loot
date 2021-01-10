@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980A04CF25AB6582005DDA03 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980A04CE25AB6582005DDA03 /* Tag.swift */; };
 		98475EA125A5734300D7A6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98475EA025A5734300D7A6B4 /* AppDelegate.swift */; };
 		98475EA325A5734300D7A6B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98475EA225A5734300D7A6B4 /* SceneDelegate.swift */; };
 		98475EA525A5734300D7A6B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98475EA425A5734300D7A6B4 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980A04CE25AB6582005DDA03 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		98475E9D25A5734300D7A6B4 /* Loot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98475EA025A5734300D7A6B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98475EA225A5734300D7A6B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		98475E9425A5734300D7A6B4 = {
 			isa = PBXGroup;
 			children = (
+				980A04CE25AB6582005DDA03 /* Tag.swift */,
 				98475E9F25A5734300D7A6B4 /* Loot */,
 				98475E9E25A5734300D7A6B4 /* Products */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980A04CF25AB6582005DDA03 /* Tag.swift in Sources */,
 				98475EA525A5734300D7A6B4 /* ViewController.swift in Sources */,
 				98475EA125A5734300D7A6B4 /* AppDelegate.swift in Sources */,
 				98475EA325A5734300D7A6B4 /* SceneDelegate.swift in Sources */,

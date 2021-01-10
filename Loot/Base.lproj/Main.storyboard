@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YBo-E2-STD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="734"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="m5n-f1-HsZ">
+                                <rect key="frame" x="38" y="770" width="350.5" height="27"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq8-B8-rYp">
+                                        <rect key="frame" x="0.0" y="1.5" width="83.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="person.crop.circle.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Profile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRl-na-xnE"/>
+                                            <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adH-p4-Usw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TO8-CV-vp7">
+                                        <rect key="frame" x="133.5" y="2.5" width="83.5" height="22.5"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="square.grid.3x3.middle.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kvb-iA-T3p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kn-TS-BNr">
+                                        <rect key="frame" x="267" y="0.0" width="83.5" height="27"/>
+                                        <state key="normal" title="Button">
+                                            <imageReference key="image" image="tray.and.arrow.up.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJZ-A6-AZC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TO8-CV-vp7" firstAttribute="leading" secondItem="Kq8-B8-rYp" secondAttribute="trailing" constant="50" id="1wy-NC-nmS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kq8-B8-rYp" secondAttribute="bottom" constant="1.5" id="2ne-2N-mc2"/>
+                                    <constraint firstItem="2Kn-TS-BNr" firstAttribute="leading" secondItem="TO8-CV-vp7" secondAttribute="trailing" constant="50" id="7CE-Ex-bAX"/>
+                                    <constraint firstItem="TO8-CV-vp7" firstAttribute="leading" secondItem="Kq8-B8-rYp" secondAttribute="trailing" constant="50" id="IL5-6a-4Os"/>
+                                    <constraint firstItem="Kq8-B8-rYp" firstAttribute="leading" secondItem="m5n-f1-HsZ" secondAttribute="leading" id="jkI-y1-EGB"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Kn-TS-BNr" secondAttribute="trailing" id="pLs-hq-H5c"/>
+                                    <constraint firstItem="2Kn-TS-BNr" firstAttribute="leading" secondItem="TO8-CV-vp7" secondAttribute="trailing" constant="50" id="shr-bO-rZH"/>
+                                    <constraint firstItem="Kq8-B8-rYp" firstAttribute="top" secondItem="m5n-f1-HsZ" secondAttribute="top" constant="1.5" id="uhP-9K-VLi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YBo-E2-STD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2pY-xj-5tI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m5n-f1-HsZ" secondAttribute="trailing" constant="25.5" id="7NC-fj-4ib"/>
+                            <constraint firstItem="m5n-f1-HsZ" firstAttribute="top" secondItem="YBo-E2-STD" secondAttribute="bottom" constant="36" id="Cnk-zi-mhL"/>
+                            <constraint firstItem="YBo-E2-STD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Edu-ZN-Gvt"/>
+                            <constraint firstItem="m5n-f1-HsZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="Uec-i1-Sgb"/>
+                            <constraint firstItem="YBo-E2-STD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y2Q-B1-9gQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m5n-f1-HsZ" secondAttribute="bottom" constant="65" id="aSd-1f-JIa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Map" destination="YBo-E2-STD" id="q99-X2-gJI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="square.grid.3x3.middle.fill" catalog="system" width="128" height="112"/>
+        <image name="tray.and.arrow.up.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
